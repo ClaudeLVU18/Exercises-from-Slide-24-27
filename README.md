@@ -282,13 +282,53 @@ int main()
     return 0; 
 }
   
- //Print Biography 
+ //Area for Rectangle, Square, Triangle 
 #include <string> // allows string to be used
 #include <stdlib.h>  
 
  int main()
 {   
-   
+    system("CLS");
+    cout << "\nArea finder for square, triangle, and rectangle.\n"; 
+    cout << "\nChoose a shape to find the area for: ";
+    cout << "\n\n1. Rectangle\n2. Triangle\n3.Square";
+    cout<<"\n\nPlease select one and input its designated number (1, 2, or 3).\n" << endl;
+    int shp;
+    cin >> shp;
+
+    switch(shp)
+    {
+        case 1:
+            cout << "\n\nPlease enter the rectangle's length: ";
+            double l;
+            cin >> l;
+            cout << "\n\nPlease enter the rectangle's width: ";
+            double w;
+            cin >> w;
+            cout << "\n\nThe area of the rectangle is " << l*w;
+            break;
+         case 2:
+            cout << "\n\nPlease enter the triangle's base: ";
+            double b;
+            cin >> b;
+            cout << "\n\nPlease enter the rectangle's height: ";
+            double h;
+            cin >> h;
+            cout << "\n\nThe area of the rectangle is " << b*h / 2;
+            break;
+        case 3:
+            cout << "\n\nPlease enter the square's sides' length: ";
+            double a;
+            cin >> a;
+            cout << "\n\nThe area of the rectangle is " << a*a;
+            break;
+        
+        default:
+            break;
+
+    }
+
+
     return 0; 
 }
   
